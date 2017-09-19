@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<tool id="split_paired_collection" name="Split Paired Collection" version="0.1">
+    <description>To split the elements of a Paired Dataset Collection into two distinct outputs</description>
+      <command>
+        $forward_element = $input_collection.forward;
+        $reverse_element = $input_collection.reverse;
+      </command>
+    <inputs>
+        <param name="input_collection" type="data_collection" collection_type="paired" label="Input Paired Collection"/>
+    </inputs>
+    <outputs>
+        <data name="forward_element" />
+        <data name="reverse_element" />
+    </outputs>
+    <tests>
+        <test>
+          <param name="input_collection">
+            <collection type="paired">
+              <element name="forward" value="forward.txt" />
+              <element name="reverse" value="reverse.txt" />
+            </collection>
+          </param>
+          <output name="forward_element">
+            <assert_contents>
+              <has_line line="Forward Element" />
+            </assert_contents>
+          </output>
+          <output name="reverse_element">
+            <assert_contents>
+              <has_line line="Reverse Element" />
+            </assert_contents>
+          </output>
+        </test>
+    </tests>
+    <help>
+.. class:: infomark
+
+**Purpose**
+
+To split the elements of a Paired Dataset Collection into two distinct outputs
+
+-----
+
+.. class:: infomark
+
+**Inputs and outputs**
+
+Input: Paired Dataset Collection
+Outputs: two files corresponding to the two elements of said collection
+	</help> 
+</tool>
+

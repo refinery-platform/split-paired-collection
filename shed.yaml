@@ -1,0 +1,12 @@
+name: split_paired_collection
+owner: scottx611x
+description: Split the elements of a Paired Dataset Collection into two distinct outputs.
+homepage_url: https://github.com/scottx611x/split-paired-collection
+long_description: |
+    Splits the elements of a Paired Dataset Collection into two distinct outputs
+    Input: Paired Dataset Collection
+    Outputs: Two files corresponding to the two elements of said collection
+remote_repository_url: https://github.com/scottx611x/split-paired-collection
+type: tool_dependency_definition
+categories:
+- Convert Formats
