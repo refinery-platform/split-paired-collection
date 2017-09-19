@@ -3,8 +3,8 @@
 <tool id="split_paired_collection" name="Split Paired Collection" version="0.1">
     <description>To split the elements of a Paired Dataset Collection into two distinct outputs</description>
       <command>
-        $forward_element = $input_collection.forward;
-        $reverse_element = $input_collection.reverse;
+        cp $input_collection.forward $forward_element;
+        cp $input_collection.reverse $reverse_element;
       </command>
     <inputs>
         <param name="input_collection" type="data_collection" collection_type="paired" label="Input Paired Collection"/>
