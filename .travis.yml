@@ -13,5 +13,5 @@ after_success:
 notifications:
     email:
         recipients:
-            - scottx611x@gmail.com
+            - $SHED_EMAIL
     on_success: never
