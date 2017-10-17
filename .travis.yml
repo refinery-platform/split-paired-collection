@@ -10,7 +10,7 @@ install:
 script:
     - planemo test
 after_success:
-    - planemo shed_upload --shed_target toolshed --shed_email $SHED_EMAIL --shed_password $SHED_PASSWORD
+    - planemo shed_update --check_diff --shed_target toolshed --shed_email $SHED_EMAIL --shed_password $SHED_PASSWORD
 notifications:
     email:
         recipients:
