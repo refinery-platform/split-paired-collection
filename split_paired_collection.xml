@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<tool id="split_paired_collection" name="Split Paired Collection" version="0.1">
+<tool id="split_paired_collection" name="Split Paired Collection" version="0.2">
     <description>To split the elements of a Paired Dataset Collection into two distinct outputs</description>
       <command>
         mv $input_collection.forward $forward_element;

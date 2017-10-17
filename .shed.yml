@@ -1,5 +1,5 @@
 name: split_paired_collection
-owner: scottx611x
+owner: refinery-platform
 description: Split the elements of a Paired Dataset Collection into two distinct outputs.
 homepage_url: https://github.com/scottx611x/split-paired-collection
 long_description: |
